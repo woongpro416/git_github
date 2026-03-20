@@ -73,29 +73,37 @@
 
 ## 5. 프로젝트 구조
 
-```bash
-frontend/
- ├── src/
- │   ├── assets/
- │   ├── components/
- │   ├── router/
- │   ├── stores/
- │   ├── views/
- │   └── App.vue
 
-backend/
- ├── src/main/java/
- │   ├── controller/
- │   ├── service/
- │   ├── repository/
- │   ├── entity/
- │   ├── dto/
- │   └── config/
- ├── src/main/resources/
- │   ├── application.yml
- │   └── static/
- └── build.gradle
 ```
+📁 Backend (Spring Boot)
+src/main/java/com/example/Logitech
+├─ config        # 보안 및 비밀번호 암호화 설정
+├─ controller    # API 엔드포인트 (회원/상품/장바구니/주문/리뷰/QnA)
+├─ domain        # 엔티티 클래스
+├─ dto           # 요청/응답 데이터 전송 객체
+├─ repository    # DB 접근 레이어
+└─ service       # 비즈니스 로직
+
+src/main/resources/
+├─ application.yml   # 환경 설정 파일
+└─ static/           # 이미지 등 정적 파일
+
+build.gradle         # 빌드 및 의존성 설정
+
+📁 Frontend (Vue.js)
+src
+├─ api           # 외부 API 연동
+├─ assets        # 이미지, 폰트 등 정적 파일
+├─ components    # 재사용 가능한 UI 컴포넌트
+├─ router        # 페이지 라우팅 설정
+├─ services      # API 호출 비즈니스 로직
+├─ store         # 전역 상태 관리 (Pinia)
+├─ views         # 페이지 단위 컴포넌트
+├─ App.vue       # 루트 컴포넌트
+├─ main.js       # 앱 진입점
+└─ style.css     # 전역 스타일
+```
+
 
 ---
 <br>
@@ -287,7 +295,7 @@ PostgreSQL 조회문을 통한 데이터 반영 여부 확인
 
 4. 배포 환경 구성 및 운영 자동화
 
-5. UI/UX 개선
+5.UI/UX 개선
 ```
 
 ---
