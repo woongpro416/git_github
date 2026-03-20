@@ -1,7 +1,7 @@
 <script setup>
 import { ref, computed } from 'vue'
-import { getItems } from '@/services/ItemService'
-import Card from '@/components/itemCard.vue'
+import { getItems } from '@/services/itemService'
+import Card from '@/components/ItemCard.vue'
 
 const items = ref([])
 const isLoading = ref(true)
