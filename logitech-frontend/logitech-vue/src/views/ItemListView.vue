@@ -1,6 +1,6 @@
 <script setup>
 import { ref, computed } from 'vue'
-import { getItems } from '@/services/itemService'
+import { getItems } from '@/services/ItemService'
 import Card from '@/components/itemCard.vue'
 
 const items = ref([])
