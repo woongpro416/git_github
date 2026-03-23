@@ -8,7 +8,7 @@ git init
 ```
 <br>
 
-## 1.2 로컬 저장소에 원격 저장소 지정dd
+## 1.2 로컬 저장소에 원격 저장소 지정
 ```bash
 git remote add origin 원격저장소주소.git
 ```
