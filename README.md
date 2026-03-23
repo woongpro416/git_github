@@ -8,7 +8,7 @@ git init
 ```
 <br>
 
-## 1.2 로컬 저장소에 원격 저장소 지정
+## 1.2 로컬 저장소에 원격 저장소 지정dd
 ```bash
 git remote add origin 원격저장소주소.git
 ```
@@ -50,5 +50,14 @@ git push -u origin main
 
 <br><br>
 
-# 2. git hub
+
+# 2. git 작업
+
+## 2.1 git 복제
+```bash
+git clone 레포지토리 주소
+```
+<br>
+
+# git hub
 원격 저장소
